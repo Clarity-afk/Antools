@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: #1E252B;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: #fff;
+}
+
+/* Общие стили */
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    border: 0;
+}
+button{
+    padding: 0;
+    border: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.oranjetext{
+    color: #ff6e30;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1225px;
+    margin: 0 auto
+}
+
+.btn{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    opacity: 0.55;
+
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-wthborder{
+    border: solid;
+    border-radius: 8px;
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.btn-active{
+    display: flex;
+    background-color: #ff6e30;
+    color: #fff;
+    opacity: 1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+p{
+    opacity: 0.55;
+}
+
+.arrow_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+input{
+    color: #fff;
+}
+/* Шапка */
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 65.5px;
+
+    
+}
+
+.header .container {
+    display: flex;  
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo-text {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.header__nav {
+    max-width: 430px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav-item {
+    opacity: 0.55;
+}
+
+.header__register {
+    display: flex;
+    align-items: center;
+}
+
+.header__register .btn {
+    opacity: 0.78;
+}
+
+/* Приветсвтенная секция */
+
+.welcome {
+    box-sizing: border-box;
+    background-image: url(images/Illustration.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.welcome__text {
+    width: 600px;
+}
+
+.welcome__title {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+
+
+.welcome__desc {
+    padding-bottom: 60px;
+}
+
+.welcome__form{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color: #283036;
+    border-radius: 15px;
+    align-items: center;
+    height: 65px;
+}
+
+.welcome__socials{
+    padding-top: 110px;
+}
+
+.welcome__input{
+    background-color: #283036;
+    border: 0;
+    width: 100%;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    outline: none;
+    
+    
+}
+
+.welcome__form img{
+    height: 25px;
+    margin: 0 10px;
+}
+
+.welcome__button{
+    margin-right: 10px;
+    padding: 12px 36px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* tools section */
+
+.tools {
+    padding-top: 200px;
+}
+
+.tools__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 90px;
+}
+
+.tools__title {
+    font-size: 48px;
+}
+
+.tools__desc {
+    font-size: 18px;
+}
+
+.tools__card {
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.tools__card-container{
+    padding: 33px;
+}
+
+.tools__card--active{
+    background-image: url(images/sketchbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tools__card-tool {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.tools__card-tool img{
+    padding-right: 30px;
+}
+
+.tools__card-img{
+    width: 28px;
+    height: 28px;
+}
+
+.tools__card-title {
+    font-weight: 500;
+    font-size: 24px;
+    opacity: 0.78;
+}
+
+.tools__card-title--active{
+    opacity: 1;
+}
+
+.tools__card-price {
+    color: #FFA537;
+    opacity: 0.55;
+}
+
+.tools__card-desc {
+    padding-bottom: 30px;
+    
+}
+
+.tools__card-footer{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.tools__card-icons{
+    display: flex;
+    gap: 28px;
+}
+
+.shadow{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.price--active{
+    opacity: 1;
+}
+
+.tools__card-icon{
+    display: flex;
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.tools__list-upper{
+    display: flex;
+    gap: 25px;
+}
+
+.tools__list-down{
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+
+.tools__btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    
+}
+
+.tools__btn a{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 200px;
+    box-sizing: border-box;
+    width: 185px;
+    height: 65px;
+}
+
+/* brand section */
+
+.brand {
+    padding-bottom: 200px;
+}
+
+.brand .container {
+    height: 250px;
+    background-image: url(images/brandbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand__text {
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.brand__title {
+    font-size: 24px;
+    font-weight: medium;
+    opacity: 0.8;
+}
+
+.brand__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+}
+
+
+
+/* newcomer section */
+
+.newcomer {
+    
+}
+
+.newcomer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newcomer__text {
+    width: 430px;
+    height: 300px;
+    line-height: 30px;
+}
+
+.newcomer__title {
+   font-size: 48px;
+   font-weight: medium; 
+   padding-bottom: 30px;
+   padding-top: 20px;
+}
+
+.newcomer__desc {
+    font-size: 18px;
+    font-weight: medium;
+    padding-bottom: 60px;
+}
+
+.newcomer__text a.btn-active {
+    width: 200px;
+    height: 60px;
+}
+
+.newcomer__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.newcomer__cards a.btn-active{
+    width: 106px;
+    height: 42px;
+    margin-left: 43px;
+}
+
+.newcomer .tools__card {
+    width: 290px;
+    height: 290px;
+}
+
+
+.newcomer .tools__card--active{
+    background: url(images/activebg-small.png) no-repeat cover;
+}
+
+.tools__card-container {
+
+}
+
+.tools__card-tool {
+
+}
+
+.tools__card-text {
+
+}
+
+.tools__card-title {
+
+}
+
+.tools__card-price {
+
+}
+
+.tools__card-desc {
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tools__card-footer {
+
+}
+
+.newcomer .tools__card-icons {
+    gap: 12px;
+}
+
+.tools__card-icon {
+
+}
+
+.tools__card-img {
+
+}
