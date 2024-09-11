@@ -29,6 +29,7 @@ a{
 button{
     padding: 0;
     border: 0;
+    cursor: pointer;
 }
 
 ul{
@@ -189,8 +190,6 @@ input{
     font-style: normal;
 
     outline: none;
-    
-    
 }
 
 .welcome__form img{
@@ -220,6 +219,17 @@ input{
     padding-bottom: 90px;
 }
 
+.tools__card:hover{
+    background-image: url(images/sketchbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.tools__card:hover .tools__card-title{
+    opacity: 1;
+}
+
 .tools__title {
     font-size: 48px;
 }
@@ -236,12 +246,6 @@ input{
 
 .tools__card-container{
     padding: 33px;
-}
-
-.tools__card--active{
-    background-image: url(images/sketchbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .tools__card-tool {
@@ -265,13 +269,13 @@ input{
     opacity: 0.78;
 }
 
-.tools__card-title--active{
-    opacity: 1;
-}
-
 .tools__card-price {
     color: #FFA537;
     opacity: 0.55;
+}
+
+.tools__card:hover .tools__card-price{
+    opacity: 1;
 }
 
 .tools__card-desc {
@@ -289,22 +293,26 @@ input{
     gap: 28px;
 }
 
-.shadow{
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-.price--active{
-    opacity: 1;
-}
-
 .tools__card-icon{
     display: flex;
     width: 42px;
     height: 42px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
+     background-color: #1E252B; /* почему-то "обесцветился", не знаю, почему */
+}
+
+.tools__card:hover .tools__card-icon{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.tools__card:hover .btn{
+    background-color: #ff6e30;
+    color: #fff;
+    opacity: 1;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .tools__list-upper{
@@ -415,11 +423,10 @@ input{
     margin-left: 43px;
 }
 
-.newcomer .tools__card {
+.newcomer .tools__card{
     width: 290px;
     height: 290px;
 }
-
 
 .newcomer .tools__card--active{
     background: url(images/activebg-small.png) no-repeat cover;
