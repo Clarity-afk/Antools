@@ -300,7 +300,7 @@ input{
     justify-content: center;
     align-items: center;
     border-radius: 10px; 
-    background-color: #1E252B; /* почему-то "обесцветился", не знаю, почему */
+    background-color: #1E252B;
 }
 
 .tools__card:hover .tools__card-icon{
