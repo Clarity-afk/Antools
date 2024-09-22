@@ -315,15 +315,16 @@ input{
     text-align: center;
 }
 
-.tools__list-upper{
+.tools__list{
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    
 }
 
-.tools__list-down{
+/* .tools__list{
     box-sizing: border-box;
     padding-top: 100px;
-}
+} */
 
 
 .tools__btn{

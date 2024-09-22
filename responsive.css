@@ -1,0 +1,192 @@
+@media (max-width: 768px) {
+    /* Контейнер */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Шапка */
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .header__nav-list {
+        flex-direction: row; /* Горизонтальное расположение */
+        gap: 15px; /* Уменьшаем отступы между элементами */
+    }
+
+    .header__register {
+        margin-top: 50px;
+    }
+
+    /* Приветственная секция */
+    .welcome {
+        text-align: center;
+        background-position: center;
+    }
+
+    .welcome__text {
+        width: 100%;
+    }
+
+    .welcome__title {
+        font-size: 36px;
+    }
+
+    .welcome__form {
+        flex-direction: column;
+        width: 50%; /* Уменьшаем ширину формы */
+        margin-top: 20px;
+    }
+
+    .welcome__input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 45px; /* Уменьшаем высоту поля */
+    }
+
+    .welcome__button {
+        width: 100%;
+        padding: 10px 30px; /* Уменьшаем размеры кнопки */
+    }
+
+    .welcome__form {
+        flex-direction: row; /* Ставим в одну линию */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: #283036;
+        margin: 20px 0;
+        height: 55px; /* Уменьшаем высоту */
+    }
+
+    .welcome__input {
+        width: 65%; /* Занимаем 65% ширины */
+        height: 100%; /* Высота равна контейнеру формы */
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        padding: 0 10px;
+        font-size: 16px; /* Увеличиваем размер текста */
+    }
+
+    .welcome__input::placeholder {
+        color: #fff;
+        opacity: 0.6;
+    }
+
+    .welcome__form img {
+        height: 22px; /* Уменьшаем размер иконки */
+        width: 22px;
+    }
+
+    .welcome__button {
+        background-color: #ff6e30;
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px 18px; /* Оптимальный размер кнопки */
+        font-size: 16px;
+        font-weight: 600;
+        width: auto; /* Кнопка адаптивная */
+        height: auto; /* Уменьшаем высоту кнопки */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Tools секция */
+    .tools {
+        padding-top: 100px;
+    }
+
+    .tools__card {
+        width: 48%; /* Уменьшаем карточки до 48% чтобы вмещались 2 в ряд */
+        margin-bottom: 20px;
+    }
+
+    .tools__list-upper, .tools__list-down {
+        flex-wrap: wrap; /* Карточки будут располагаться в 2 колонки */
+        justify-content: space-between;
+    }
+
+    .tools__card-container {
+        padding: 20px;
+    }
+
+    .tools__card-title {
+        font-size: 18px;
+    }
+
+    .tools__card-desc {
+        font-size: 14px;
+    }
+
+    /* Newcomer секция */
+    .newcomer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newcomer__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .newcomer__cards {
+        width: 100%;
+        justify-content: space-between; /* Карточки будут по 2 в строке */
+        flex-wrap: wrap;
+    }
+
+    .newcomer .tools__card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .newcomer__text a{
+        margin: 0 auto;
+    }
+
+    /* Brand секция */
+    .brand__images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .brand__images img{
+        margin-bottom: 15px;
+    }
+
+    .brand .container {
+        padding: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1215px) {
+    .tools__list{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .tools__list{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .tools__list .tools__card {
+        width: 100%;
+        margin: 0 100px;
+    }
+}
+
