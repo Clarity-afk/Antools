@@ -190,3 +190,10 @@
     }
 }
 
+@media (max-width: 550px){
+    .newcomer .tools__card{
+        width: 100%;
+        margin: 0 20px;
+    }
+}
+
