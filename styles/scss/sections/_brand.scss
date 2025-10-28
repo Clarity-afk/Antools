@@ -1,0 +1,29 @@
+.brand {
+    padding-bottom: 200px;
+}
+
+.brand .container {
+    height: 250px;
+    background-image: url(images/brandbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brand__text {
+    padding: 55px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.brand__title {
+    font-size: 24px;
+    font-weight: medium;
+    opacity: 0.8;
+}
+
+.brand__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 82px;
+}

@@ -1,0 +1,47 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 65.5px;
+
+    
+}
+
+.header .container {
+    display: flex;  
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header__logo-text {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.header__nav {
+    max-width: 430px;
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header__nav-item {
+    opacity: 0.55;
+}
+
+.header__register {
+    display: flex;
+    align-items: center;
+}
+
+.header__register .btn {
+    opacity: 0.78;
+}

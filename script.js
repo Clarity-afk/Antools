@@ -1,5 +1,4 @@
 function toggleLike(button) {
-    console.log("Функция toggleLike вызвана!");  // Лог для отладки
     const likeImage = button.querySelector('img');  // Находим картинку внутри кнопки
 
     // Проверяем текущее изображение и меняем на активный или обычный лайк
