@@ -1,60 +1,60 @@
 .welcome {
-    box-sizing: border-box;
-    background-image: url(images/Illustration.png);
-    background-repeat: no-repeat;
-    background-position: right;
+  margin-top: 110px;
+  box-sizing: border-box;
+  background-image: url(images/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-
 .welcome__text {
-    width: 600px;
+  width: 600px;
 }
 
 .welcome__title {
-    font-size: 50px;
-    padding-bottom: 30px;
+  font-size: 50px;
+  padding-bottom: 30px;
 }
-
-
 
 .welcome__desc {
-    padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 
-.welcome__form{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    background-color: #283036;
-    border-radius: 15px;
-    align-items: center;
-    height: 65px;
+.welcome__form {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  background-color: #283036;
+  border-radius: 15px;
+  align-items: center;
+  height: 65px;
 }
 
-.welcome__socials{
-    padding-top: 110px;
+.welcome__socials {
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
 }
 
-.welcome__input{
-    background-color: #283036;
-    border: 0;
-    width: 100%;
+.welcome__input {
+  background-color: #283036;
+  border: 0;
+  width: 100%;
 
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 
-    outline: none;
+  outline: none;
 }
 
-.welcome__form img{
-    height: 25px;
-    margin: 0 10px;
+.welcome__form img {
+  height: 25px;
+  margin: 0 10px;
 }
 
-.welcome__button{
-    margin-right: 10px;
-    padding: 12px 36px;
-    overflow: hidden;
-    box-sizing: border-box;
+.welcome__button {
+  margin-right: 10px;
+  padding: 12px 36px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
