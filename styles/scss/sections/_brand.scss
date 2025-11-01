@@ -1,29 +1,33 @@
 .brand {
-    padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .brand .container {
-    height: 250px;
-    background-image: url(images/brandbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 250px;
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(
+    135deg,
+    rgba(#ff484266, 0.4),
+    $color-light-gray 10%
+  );
 }
 
 .brand__text {
-    padding: 55px 0;
-    display: flex;
-    justify-content: center;
+  padding: 55px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .brand__title {
-    font-size: 24px;
-    font-weight: medium;
-    opacity: 0.8;
+  font-size: 24px;
+  font-weight: medium;
+  opacity: 0.8;
 }
 
 .brand__images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 82px;
 }

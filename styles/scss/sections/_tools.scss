@@ -12,10 +12,16 @@
 }
 
 .tools__card:hover {
-  backdrop-filter: blur(50px);
-  background: rgba(40, 48, 54, 0.6);
-  cursor: pointer;
+  background: radial-gradient(
+    circle at 85% 5%,
+    rgba($color-orange, 0.25),
+    $color-light-gray 20%
+  );
+
+  box-shadow: 0 5px rgba(0, 0, 0, 0.35);
 }
+
+// todo: make a full opacity border in tools_card
 
 .tools__card:hover .tools__card-title {
   opacity: 1;
@@ -30,9 +36,15 @@
 }
 
 .tools__card {
-  width: 400px;
-  height: 300px;
+  background: $color-dark-gray;
+  max-width: 400px;
+  max-height: 300px;
   border-radius: 15px;
+  transition: $transition;
+}
+
+.tools__card * {
+  transition: $transition;
 }
 
 .tools__card-container {
@@ -61,11 +73,14 @@
 }
 
 .tools__card-price {
-  color: #ffa537;
+  color: $color-yellow;
   opacity: 0.55;
 }
 
 .tools__card:hover .tools__card-price {
+  opacity: 1;
+}
+.tools__card:hover .tools__card-desc {
   opacity: 1;
 }
 
@@ -90,24 +105,29 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #1e252b;
+  background-color: $color-dark-gray;
 }
 
 .tools__card:hover .tools__card-icon {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 }
 
-.tools__card:hover .btn {
-  background-color: #ff6e30;
-  color: #fff;
-  opacity: 1;
+.tools__card .btn {
   border-radius: 8px;
+}
+
+.tools__card:hover .btn {
+  background-color: $color-orange;
+  color: $color-light;
+  opacity: 1;
   text-align: center;
 }
 
 .tools__list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 10px;
 }
 
 /* .tools__list{
