@@ -213,7 +213,8 @@ input {
 
 .welcome__button {
   margin-right: 10px;
-  padding: 12px 36px;
+  padding: 17px 40px;
+  width: 130px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -232,7 +233,10 @@ input {
 
 .tools__card:hover {
   background: radial-gradient(circle at 85% 5%, rgba(255, 110, 48, 0.25), #283036 20%);
-  box-shadow: 0 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 5px rgba(0, 0, 0, 0.15);
+  transform: translateY(-20px);
+  outline: 2px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -2px;
 }
 
 .tools__card:hover .tools__card-title {
@@ -253,6 +257,7 @@ input {
   max-height: 300px;
   border-radius: 15px;
   transition: all 0.2s ease-in;
+  outline: 0px solid rgba(255, 255, 255, 0.05);
 }
 
 .tools__card * {
@@ -339,15 +344,19 @@ input {
 .tools__list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
 }
 
-/* .tools__list{
-    box-sizing: border-box;
-    padding-top: 100px;
-} */
+.tools__list-upper,
+.tools__list-lower {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.tools__list-upper {
+  margin-bottom: 100px;
+}
+
 .tools__btn {
   display: flex;
   justify-content: center;
