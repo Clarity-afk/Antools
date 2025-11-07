@@ -22,14 +22,19 @@
 
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <a href="#"><li class="header__nav-item">Home</li></a>
-            <a href="#"
-              ><li class="header__nav-item arrow_down">
-                Categories
-                <img src="images/icons/chevron-down.png" alt="" /></li
-            ></a>
-            <a href="#"><li class="header__nav-item">My Collections</li></a>
-            <a href="#"><li class="header__nav-item">Blog</li></a>
+            <li class="header__nav-item"><a href="#">Home</a></li>
+            <li class="header__nav-item submenu">
+              <a href="#"
+                >Categories <img src="images/icons/chevron-down.png" alt=""
+              /></a>
+              <ul class="header__nav-submenu">
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </li>
+            <li class="header__nav-item"><a href="#">My Collections</a></li>
+            <li class="header__nav-item"><a href="#">Blog</a></li>
           </ul>
         </nav>
         <div class="header__register">

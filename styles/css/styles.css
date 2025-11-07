@@ -19,7 +19,7 @@ body {
 /* Общие стили */
 a {
   text-decoration: none;
-  color: #fff;
+  color: currentColor;
   padding: 0;
   border: 0;
 }
@@ -81,13 +81,6 @@ p {
   opacity: 0.55;
 }
 
-.arrow_down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-
 input {
   color: #fff;
 }
@@ -123,11 +116,20 @@ input {
 .header__nav-list {
   display: flex;
   gap: 40px;
+  position: relative;
 }
 
 .header__nav-item {
   opacity: 0.55;
   transition: all 0.2s ease-in;
+}
+
+.header__nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
 }
 
 .header__nav-item:hover {
@@ -147,6 +149,27 @@ input {
 
 .header__register .btn:hover {
   opacity: 1;
+}
+
+.header__nav-submenu {
+  display: none;
+}
+
+.header__nav-item a:focus ~ .header__nav-submenu,
+.header__nav-item a:active ~ .header__nav-submenu {
+  display: inline-flex;
+  flex-direction: column;
+  position: absolute;
+  right: 50%;
+}
+
+.header__nav-submenu li {
+  background-color: #283036;
+  border-radius: 25px;
+}
+
+.header__nav-submenu li a {
+  padding: 16px 24px;
 }
 
 .welcome {
