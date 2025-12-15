@@ -31,3 +31,19 @@
   align-items: center;
   padding: 0 82px;
 }
+
+@media (max-width: 768px) {
+  .brand__images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .brand__images img {
+    margin-bottom: 15px;
+  }
+
+  .brand .container {
+    padding: 20px;
+    height: auto;
+  }
+}

@@ -1,59 +1,93 @@
 .newcomer .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .newcomer__text {
-    width: 430px;
-    height: 300px;
-    line-height: 30px;
+  width: 430px;
+  height: 300px;
+  line-height: 30px;
 }
 
 .newcomer__title {
-   font-size: 48px;
-   font-weight: medium; 
-   padding-bottom: 30px;
-   padding-top: 20px;
+  font-size: 48px;
+  font-weight: medium;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 .newcomer__desc {
-    font-size: 18px;
-    font-weight: medium;
-    padding-bottom: 60px;
+  font-size: 18px;
+  font-weight: medium;
+  padding-bottom: 60px;
 }
 
 .newcomer__text a.btn-active {
-    width: 200px;
-    height: 60px;
+  width: 200px;
+  height: 60px;
 }
 
 .newcomer__cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
 }
 
-.newcomer__cards a.btn-active{
-    width: 106px;
-    height: 42px;
-    margin-left: 43px;
+.newcomer__cards a.btn-active {
+  width: 106px;
+  height: 42px;
+  margin-left: 43px;
 }
 
-.newcomer .tools__card{
-    width: 290px;
-    height: 290px;
+.newcomer .tools__card {
+  width: 290px;
+  height: 290px;
 }
 
-.newcomer .tools__card--active{
-    background: url(images/activebg-small.png) no-repeat cover;
+.newcomer .tools__card--active {
+  background: url(images/activebg-small.png) no-repeat cover;
 }
 
 .tools__card-desc {
-    line-height: 30px;
-    font-size: 14px;
-    font-weight: 400;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .newcomer .tools__card-icons {
-    gap: 12px;
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .newcomer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newcomer__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newcomer__cards {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .newcomer .tools__card {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .newcomer__text a {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .newcomer .tools__card {
+    width: 100%;
+    margin: 0 20px;
+  }
 }

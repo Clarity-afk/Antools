@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antools</title>
     <link rel="stylesheet" href="./styles/css/styles.css" />
-    <link rel="stylesheet" href="./styles/css/responsive.css" />
     <link rel="stylesheet" href="./styles/css/normalize.css" />
   </head>
   <body>
@@ -24,7 +23,7 @@
           <ul class="header__nav-list">
             <li class="header__nav-item"><a href="#">Home</a></li>
             <li class="header__nav-item submenu">
-              <a href="#"
+              <a href="#" class="header__item-text"
                 >Categories <img src="images/icons/chevron-down.png" alt=""
               /></a>
               <ul class="header__nav-submenu">
@@ -41,6 +40,9 @@
           <a href="#" class="btn">Login</a>
           <a href="#" class="btn btn-active">Sign Up</a>
         </div>
+        <button class="header__burger-button" id="burger-btn">
+          <img src="images/icons/burger-menu.svg" alt="burger-menu-button" />
+        </button>
       </div>
     </header>
 
@@ -354,12 +356,13 @@
             </div>
           </div>
           <div class="tools__btn">
-            <a href="#" class="btn btn-wthborder oranjetext">Load more</a>
+            <button href="#" class="btn btn-wthborder oranjetext">
+              Load more
+            </button>
+            <span class="loader unactive"></span>
           </div>
         </div>
       </section>
-
-      <!-- todo: make floors to tools to upper and lower to make right margins-->
 
       <section class="brand">
         <div class="container">

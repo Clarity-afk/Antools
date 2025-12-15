@@ -13,6 +13,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  transition: $transition;
+}
+
+.header__logo:hover {
+  transform: scale(1.05);
 }
 
 .header__logo-text {
@@ -35,6 +40,7 @@
 .header__nav-item {
   opacity: 0.55;
   transition: $transition;
+  white-space: nowrap;
 }
 
 .header__nav-item a {
@@ -44,8 +50,12 @@
   column-gap: 5px;
 }
 
-.header__nav-item:hover {
+.header__nav-item > a:hover {
   color: $color-light;
+  opacity: 1;
+}
+
+.header__nav-item:hover {
   opacity: 1;
 }
 
@@ -67,23 +77,82 @@
 
 .header__nav-submenu {
   display: none;
-}
-
-.header__nav-item a:focus ~ .header__nav-submenu,
-.header__nav-item a:active ~ .header__nav-submenu {
-  display: inline-flex;
-  flex-direction: column;
   position: absolute;
   right: 50%;
+}
+
+.header__nav-submenu li {
+  border: 2px solid transparent;
+  transition: $transition;
+}
+
+.header__nav-item a:hover ~ .header__nav-submenu,
+.header__nav-submenu:hover {
+  display: block;
+}
+
+.header__nav-submenu li:hover {
+  border-color: $color-orange;
+  font-weight: 600;
 }
 
 // элемент (li)
 
 .header__nav-submenu li {
   background-color: $color-light-gray;
-  border-radius: 25px;
 }
 
 .header__nav-submenu li a {
   padding: 16px 24px;
+}
+
+.header__nav-item img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__nav-item:hover img {
+  transform: rotate(540deg);
+}
+
+.header__burger-button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  background-color: transparent;
+  width: 40px;
+}
+
+.header__burger-button img {
+  width: 100%;
+  transition: transform 0.2s ease-in;
+}
+
+.header__burger-button img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 868px) {
+  .btn {
+    width: auto;
+    padding: 5px 10px;
+  }
+
+  .header__register {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+  }
+
+  .header__burger-button {
+    display: flex;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
